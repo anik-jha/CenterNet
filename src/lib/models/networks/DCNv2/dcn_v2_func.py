@@ -1,9 +1,10 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 from __future__ import absolute_import
 from __future__ import print_function
 from __future__ import division
 
 import torch
+print ("cuda related", torch.version.cuda, torch.cuda.is_available())
 from torch.autograd import Function
 
 from ._ext import dcn_v2 as _backend
